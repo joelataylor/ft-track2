@@ -51,3 +51,14 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+
+## Custom FreelanceTrackr Installation
+
+* `npm install --save-dev ember-cli-bootstrap-sass`
+* Reference to get bootstrap working: http://hbrysiewicz.github.io/2014-10-14-ember-bootstrap-sass-summernote.html
+* `npm install --save-dev ember-cli-moment`
+* `npm install --save-dev ember-cli-emberfire`
+* Add config/environment var: `ENV.APP.firebaseDB = 'https://freelancetrackr.firebaseio.com';`
+
+

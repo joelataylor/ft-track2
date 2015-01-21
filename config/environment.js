@@ -13,6 +13,16 @@ module.exports = function(environment) {
       }
     },
 
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' maps.gstatic.com",
+      'font-src': "'self' data: fonts.gstatic.com",
+      'connect-src': "'self'",
+      'img-src': "'self' www.facebook.com p.typekit.net",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
+      'frame-src': "static.ak.facebook.com www.facebook.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -25,6 +35,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.firebaseDB = 'https://freelancetrackr.firebaseio.com';
   }
 
   if (environment === 'test') {
